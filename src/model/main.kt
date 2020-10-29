@@ -11,7 +11,7 @@ fun main() {
     println(camera.getResolution())
 
     //usando los metodos get y set provistos por Kotlin
-    val shoe = Shoe()
+    val shoe = Shoe("super star", "white shoe", 224324, "Adidas")
     shoe.color = "Red"
     shoe.model = "Tenis"
     shoe.size = 32
@@ -24,4 +24,9 @@ fun main() {
     val movie = EjemploDataClassMovie("Amelie", "Calvin", 120) //pasando datos al constructor
     println("duration: ${movie.duration} minutos")
     println(movie)
+
+    //shoe que hereda de product
+    val jordan = Shoe("jordan","red shoe", 1233, "Nike")
+    println("Shoe: $jordan")
+
 }

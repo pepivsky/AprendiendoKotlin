@@ -1,6 +1,25 @@
 package model
 //clase que usa los get y set provistos por Kotlin
-class Shoe {
+class Shoe(name: String, description: String, sku: Int, var brand: String): //el constructor de la clase debe recibir los parametos necesarios
+    Product(name, description, sku) {
+    //sobreescribiendo metodo create
+    override fun create(): String {
+        return "Create Shoe"
+    }
+    override fun read(): String {
+        return "Read shoe"
+    }
+    override fun update(): String {
+        return "Update shoe"
+    }
+    override fun delete(): String {
+        return "Delete shoe"
+    }
+
+    override fun toString(): String {
+        return super.toString() + "\nBrand: $brand"
+    }
+
     var size: Int = 34 //valor mínimo
         //get y set provistos por kotlin (deben implementarse debajo de la declaracionnde la propiedad)
         set(value) {  //value el valor que viene por parametro
