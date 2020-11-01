@@ -29,4 +29,6 @@ fun main() {
     val jordan = Shoe("jordan","red shoe", 1233, "Nike")
     println("Shoe: $jordan")
 
+    println(jordan.create()) //metodo que se hereda de la interfaz
+
 }

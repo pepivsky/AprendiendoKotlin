@@ -1,9 +1,11 @@
 package model
 //clase que usa los get y set provistos por Kotlin
 class Shoe(name: String, description: String, sku: Int, var brand: String): //el constructor de la clase debe recibir los parametos necesarios
-    Product(name, description, sku) {
-    //sobreescribiendo metodo create
+    Product(name, description, sku), ICrudActions { //implementando los metodos de la interfaz (es necesario agregar todos los que no tienen implementacin)
+
+    // implementando metodos de la iterfaz
     override fun create(): String {
+        saludar("Hola desde el create de Shoe")
         return "Create Shoe"
     }
     override fun read(): String {

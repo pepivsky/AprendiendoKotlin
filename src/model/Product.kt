@@ -11,14 +11,14 @@ abstract class Product(var name: String, var description: String, var sku: Int) 
         return "Create"
     }*/
 
-    //convirietiendo a metodos abstractos
+    /*//convirietiendo a metodos abstractos
     abstract fun create(): String //metodo abstracto sin implementacion
 
     abstract fun read(): String
 
     abstract fun update(): String
 
-    abstract fun delete(): String
+    abstract fun delete(): String*/
 
 
 }
