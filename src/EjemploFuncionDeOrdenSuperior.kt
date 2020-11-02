@@ -1,4 +1,3 @@
-package model
 //funcion de orden superior que recibe otra funcion
 fun calculadora(a: Int, b: Int, c: Int, funcion: (Int, Int, Int) -> Int): Int {
     return funcion(a, b, c) //pasando los parametros a la funcion

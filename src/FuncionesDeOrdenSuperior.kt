@@ -1,5 +1,3 @@
-package model
-
 //Las funciones de orden superior son aquelllas  que reciben otra funcion como parametro
 
 //funcion de orden superior que recibe otra funcion y esa funcion reciobe dos enteros, se indica antes de la flecha, y despues de la flecha va el tipo de dato que regresa
