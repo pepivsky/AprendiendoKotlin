@@ -54,6 +54,8 @@ fun main() {
         println("numero: $element in index: $index")
     }
 
+    //imprimiendo el indice con withIndex
+    println("usando withIndex")
     for (i in numbers.withIndex()){
         println(i.index) //tambien se puede obtener de esta manera
     }

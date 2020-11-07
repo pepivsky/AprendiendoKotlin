@@ -1,5 +1,3 @@
-package recipesmaker
-
 fun main() {
     //Em kotlin todas las cosas pueden ser una expresion
 
