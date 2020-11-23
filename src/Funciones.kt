@@ -30,6 +30,7 @@ fun main() {
     var suma = { a: Int, b: Int -> a + b } //de lado izquierdo van los parametros y de lado derecho las instrucciones
     var resultadoSuma = suma(2, 3)
     println(resultadoSuma)
+
     //imprimiendo directamente usando la variable que contiene la funcion
     println(suma(5, 5))
     //imprimiendo directamente usando una lambda
@@ -63,4 +64,6 @@ fun evaluar(
 ): String { //si no se especifica un parametro, este tomara el valor por defecto
     return "$num es $caracter"
 }
+
+//una funcion lambda se puede
 
