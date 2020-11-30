@@ -52,4 +52,16 @@ fun main() {
     val listWithoutNulls: List<Int?> = listWithNulls.filterNotNull()
     println("Lista sin nulos: $listWithoutNulls") /*Imprimimos la lista filtrada*/
 
+    //llamada segura sin tener que cambiar una funcion
+    class Reunion {
+
+    }
+    val reunion: Reunion? = null
+    fun pay(reunion: Reunion) {
+        println("Reunion $reunion")
+    }
+    reunion?.let {  //agregando el "?" y la funcion let se comprueba si reunion es diferente de null se llama a la funcion pay, de lo contrario no se llama nada, podemos usar let cuando queremos evitar cambiar la firma de la funcion
+        pay(reunion)
+    }
+
 }
