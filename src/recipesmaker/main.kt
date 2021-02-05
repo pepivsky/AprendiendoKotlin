@@ -145,6 +145,7 @@ fun makeRecipe() {
 
             //agregando al mapReceta
             addToRecipe(ingrediente, cantidad)
+            //println(Aceites.listAceites.get(1))
         }
     }
 

@@ -24,10 +24,13 @@ object Verduras {
 }
 
 object Aceites {
-    val listAceites = listOf("Oliva", "Girsaol", "Palma")
+    val listAceites = mutableListOf("Oliva", "Girsaol", "Palma")
+
 
     fun showAceitesList() {
+
         listAceites.forEachIndexed { index, item -> println("${index + 1}.$item") }
+        //listAceites.
     }
 }
 
