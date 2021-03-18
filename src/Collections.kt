@@ -11,7 +11,7 @@ fun main() {
     println(countries) //imprime la direccion de memoria
 
     println(days)
-    println(numbers)
+    println(CONSTANTE)
 
     for (country in countries) {
         println("Paises: $country")
@@ -71,5 +71,9 @@ fun main() {
         println("Name:$name age:$age")
     }
 
+
+}
+const val SOME = "some"
+class Algo {
 
 }
