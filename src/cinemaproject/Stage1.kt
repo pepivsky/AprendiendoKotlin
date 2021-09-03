@@ -23,19 +23,19 @@ Cinema:
 
  */
 fun main() {
-    // write your code here
-    println("Cinema:")
-    println(
-        """
-  1 2 3 4 5 6 7 8
-1 S S S S S S S S
-2 S S S S S S S S
-3 S S S S S S S S
-4 S S S S S S S S
-5 S S S S S S S S
-6 S S S S S S S S
-7 S S S S S S S S
-    """.trimIndent()
-    )
+    val rows = 7
+    val cols = 8
+    val grid = Array(rows) { CharArray(cols) { 'S' } }
 
+    println("Cinema:")
+    for (i in 0..cols) { if (i == 0) print("  ") else print("$i ") }
+    println()
+
+    for (i in 0 until rows) {
+        print("${i + 1} ") // imprime los numeros de las filas
+        for (j in 0 until cols) {
+            print("${grid[i][j]} ") // imprime la matriz
+        }
+        println()
+    }
 }
