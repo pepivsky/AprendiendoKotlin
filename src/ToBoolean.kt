@@ -24,3 +24,5 @@ true
 
  */
 fun main() = println(readLine().toBoolean()) // to bolean devuelve true si se le pasa "1" o "true" y false con "0" y "false", la funcion es ignore case
+// otra solucion
+// fun main() = readLine()!!.toBoolean().let(::print)
