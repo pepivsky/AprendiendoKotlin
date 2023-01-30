@@ -33,7 +33,8 @@ object Hamming {
         return differences
 
         // otra solucion
-        // return left.zip(right).count { it.first != it.second }
+        // zip devuelve una lista de pares, entonces solo hay que contar cuantos pares son diferentes con count
+        // return leftStrand.zip(rightStrand).count { it.first != it.second }
     }
 }
 
